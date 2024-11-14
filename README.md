@@ -32,7 +32,11 @@ Usage
 Running the App Locally
 To run the app locally, use the following command:
 
+<<<<<<< HEAD
 npm run dev
+=======
+npm start
+>>>>>>> 2f0c4cdca10901367f595f845c6bf2f98431f8bb
 
 
 
