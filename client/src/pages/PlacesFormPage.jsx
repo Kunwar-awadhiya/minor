@@ -76,11 +76,11 @@ export default function CriminalFormPage() {
     };
 
     if (id) {
-      // update
+    
       await axios.put('/criminals', { id, ...criminalData });
       setRedirect(true);
     } else {
-      // new criminal
+  
       await axios.post('http://localhost:8080/api/v1/crime/criminals', criminalData);
       setRedirect(true);
     }
