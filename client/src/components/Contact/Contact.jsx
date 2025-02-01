@@ -3,7 +3,6 @@ import Navbar2 from "../Navbar/Navbar2.jsx";
 import Hero from "../Hero/Hero.jsx";
 import Hero2 from '../Hero/Hero2.jsx'; 
 
-// import BgVideo from '../../assets/earth-bg.mp4';
 import BgVideo from '../../assets/bailvideo.mp4';
 import AOS from "aos";
 import "aos/dist/aos.css";
