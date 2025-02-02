@@ -2,8 +2,6 @@ import React,{useState, useEffect} from "react";
 import Navbar from "../Navbar/Navbar.jsx";
 import Hero from "../Hero/Hero.jsx";
 import HeroCard from "../HeroCard/HeroCard.jsx";
-// import BgVideo from '../../assets/earth-bg.mp4';
-// import BgVideo from '../../assets/bailvideo.mp4';
 import BgVideo from '../../assets/yoga.mp4';
 import wave from "../../assets/wave Gif.gif";
 import Rapidscat from "../RapidScat/Rapidscat.jsx";
@@ -37,7 +35,6 @@ const Home = () => {
       <HeroCard />
       <Rapidscat />
       <Satelite />
-      {/* <Footer /> */}
       <Footer5 />
     </div>
   );
