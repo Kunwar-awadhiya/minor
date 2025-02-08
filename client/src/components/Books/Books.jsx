@@ -9,7 +9,6 @@ const BooksComponent = () => {
     const [leaves, setLeaves] = useState(0); // Track leaves count
     const [totalScore, setTotalScore] = useState(0); // Track total score
 
-    // Corrected API URL string with quotes
     const API_URL = "https://www.googleapis.com/books/v1/volumes?q=meditation";
 
     const fetchBooks = async () => {
