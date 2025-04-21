@@ -1,4 +1,3 @@
-
 // BubblePopGame.js
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -6,6 +5,7 @@ import { Link } from 'react-router-dom';
 function BubblePopGame() {
   const [bubbles, setBubbles] = useState([]);
   const [score, setScore] = useState(0);
+  const [isScoreCounted, setIsScoreCounted] = useState(false); // ✅ To prevent multiple score increments
 
   const colors = ['bg-red-400', 'bg-blue-400', 'bg-green-400', 'bg-yellow-400', 'bg-purple-400', 'bg-pink-400'];
 
@@ -26,22 +26,25 @@ function BubblePopGame() {
     }
     setBubbles(newBubbles);
     setScore(0);
+    setIsScoreCounted(false); // ✅ Reset on new game
   };
 
   const popBubble = (id) => {
     setBubbles((prevBubbles) => prevBubbles.filter((bubble) => bubble.id !== id));
-    setScore((prevScore) => {
-      const newScore = prevScore + 1;
+    setScore((prevScore) => prevScore + 1);
+
+    if (!isScoreCounted) {
       const totalOverAllScore = Number(localStorage.getItem('totalScore')) || 0;
       localStorage.setItem('totalScore', totalOverAllScore + 1);
-      return newScore;
-    });
+      setIsScoreCounted(true); // ✅ Score now counted for this session
+    }
   };
 
   return (
     <div className="w-full max-w-3xl mx-auto p-4">
       <h1 className="text-2xl font-bold text-center mb-4">Bubble Pop Game</h1>
-      <p className="text-center mb-4">Pop the bubbles to relieve stress! Score: {score}</p>
+      <p className="text-center mb-4">Pop the bubbles to relieve stress! <br /> <strong>Score:</strong> {score}</p>
+
       <div className="relative w-full h-96 bg-gray-100 rounded-lg overflow-hidden mb-4">
         {bubbles.map((bubble) => (
           <div
@@ -58,18 +61,17 @@ function BubblePopGame() {
           />
         ))}
       </div>
-      <div className="text-center">
+
+      <div className="text-center space-x-2">
         <button onClick={generateBubbles} className="bg-blue-500 text-white px-4 py-2 rounded mb-4">
           Reset Game
         </button>
         <Link to="/color">
           <button className="bg-green-500 text-white px-4 py-2 rounded">Play Color Match Game</button>
         </Link>
-
         <Link to="/memory">
-          <button className="bg-red-500 text-white px-4 py-2 rounded">Play Memory games</button>
+          <button className="bg-red-500 text-white px-4 py-2 rounded">Play Memory Game</button>
         </Link>
-
       </div>
     </div>
   );

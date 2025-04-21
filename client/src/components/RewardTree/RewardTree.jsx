@@ -292,11 +292,6 @@ export default function InteractiveTree() {
       </div>
       
       <div className="text-center w-full max-w-md">
-        <div className="flex justify-between text-sm text-gray-600 mb-1">
-          <span>0</span>
-          <span>{maxTasks}</span>
-        </div>
-        
         <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
           <div 
             className="bg-gradient-to-r from-green-400 to-green-600 h-4 rounded-full transition-all duration-1000 ease-out"

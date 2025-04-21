@@ -76,7 +76,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h3 className="font-medium">Address</h3>
-                  <p className="mt-1">123 Street Name, City, State 12345</p>
+                  <p className="mt-1">Vidisha,Madhya Pradesh</p>
                 </div>
               </div>
               
@@ -86,7 +86,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="mt-1">info@yourcompany.com</p>
+                  <p className="mt-1">hello@mindchool.edu</p>
                 </div>
               </div>
               
@@ -96,7 +96,7 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="mt-1">(123) 456-7890</p>
+                  <p className="mt-1">+91 6254784561</p>
                 </div>
               </div>
             </div>
