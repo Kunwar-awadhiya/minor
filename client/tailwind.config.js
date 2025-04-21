@@ -41,7 +41,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#F5385D', // Define your primary color here
+        primary: '', // Define your primary color here
       },
       container: {
         center: true,

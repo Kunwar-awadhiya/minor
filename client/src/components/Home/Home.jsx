@@ -1,3 +1,4 @@
+
 import React,{useState, useEffect} from "react";
 import Navbar from "../Navbar/Navbar.jsx";
 import Hero from "../Hero/Hero.jsx";
@@ -19,19 +20,9 @@ const Home = () => {
     });
   });
   return (
-    <div className="">
-      <div className="h-[700px] relative">
-        <video
-          autoPlay
-          loop
-          muted
-          className="fixed right-0 top-0 h-[700px] w-full object-cover z-[-1]"
-        >
-          <source src={BgVideo} type="video/mp4" />
-        </video>
+    <div className=""> 
         <Navbar />
         <Hero />
-      </div>
       <HeroCard />
       <Rapidscat />
       <Satelite />
