@@ -21,6 +21,19 @@ import ColorMatch from './components/Games/ColorMatch/colorMatch.jsx';
 import Memory from './components/Games/Memory/Memory.jsx'; 
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 
+import Relax from './components/relax/Relax.jsx';
+import Article from './components/Article/Articles.jsx';
+
+import Anxiety from './components/Article/Anxiety.jsx';
+import Depression from './components/Article/Depression.jsx';
+import Ocd from './components/Article/Ocd.jsx';
+import PanicDisorder from './components/Article/PanicDisorder.jsx';
+import BipolarArticle from './components/Article/BipolarArticle.jsx';
+import Schizophrenia from './components/Article/Schizophrenia.jsx';
+import Ptsd from './components/Article/Ptsd.jsx';
+import Psychosis from './components/Article/Psychosis.jsx';
+
+
 axios.defaults.baseURL = 'http://localhost:8080'; 
 axios.defaults.withCredentials = true; 
 
@@ -41,6 +54,26 @@ const App = () => {
         <Route path='/placeformpage' element={<ProtectedRoute><PlacesFormPage /></ProtectedRoute>} />
         <Route path='/reward' element={<ProtectedRoute><RewardTree /></ProtectedRoute>} />
         <Route path='/breathing' element={<ProtectedRoute><Breathing /></ProtectedRoute>} />
+        
+        
+        <Route path='/relax' element={<ProtectedRoute><Relax/></ProtectedRoute>}/>  
+        <Route path='/articles' element={<Article/>}/> 
+
+        <Route path='/anxiety' element={<Anxiety/>}/>
+        <Route path='/depression' element={<Depression/>}/>
+        <Route path='/ocd' element={<Ocd/>}/>
+        <Route path='/panicdisorder' element={<PanicDisorder/>}/>
+        <Route path='/bipolar-article' element={<BipolarArticle/>}/>
+        <Route path='/schizophrenia' element={<Schizophrenia/>}/>
+        <Route path='/ptsd' element={<Ptsd/>}/>
+        <Route path='/psychosis' element={<Psychosis/>}/>
+     
+
+
+
+            
+
+
         <Route path='/books' element={<ProtectedRoute><Books /></ProtectedRoute>} />
         <Route path='/video' element={<ProtectedRoute><Video /></ProtectedRoute>} />
         <Route path='/bubble' element={<ProtectedRoute><Bubble /></ProtectedRoute>} />

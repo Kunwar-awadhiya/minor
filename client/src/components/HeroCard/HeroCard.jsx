@@ -63,7 +63,7 @@ const ServiceData = [
         description: "Boost your fitness with a variety of exercises designed to improve your mental and physical health.",
         icon: <ExerciseIcon />,
         aosDelay: "400",
-        link: "https://www.youtube.com/playlist?list=PLtQmcQeXvpL8U7szuZQ_eOwBLcT94YeiZ",
+        link: "/relax",
         bgColor: "from-green-700 to-blue-700"
     },
     {
@@ -90,7 +90,7 @@ const ServiceData = [
         description: "Writing in a blog provides a space to express emotions and connect with others on similar journeys.",
         icon: <CommunityIcon />,
         aosDelay: "700",
-        link: "https://repo-frontend-0ixl.onrender.com/",
+        link: "/articles",
         bgColor: "from-indigo-700 to-blue-700"
     },
     {
