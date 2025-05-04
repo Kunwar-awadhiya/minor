@@ -1,3 +1,5 @@
+// this is about section
+
 import React,{useState, useEffect} from "react";
 import Navbar from "../Navbar/Navbar.jsx";
 import Hero from "../Hero/Hero.jsx";
