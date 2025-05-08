@@ -1,3 +1,5 @@
+// contact component
+
 import React, { useState, useEffect } from "react";
 import Navbar2 from "../Navbar/Navbar2.jsx";
 import Hero2 from '../Hero/Hero2.jsx';
