@@ -21,7 +21,7 @@ const Anxiety = () => {
     <div className="max-w-4xl mx-auto px-4 py-8 bg-white rounded-lg shadow-lg">
       <h1 className="text-3xl font-bold text-center mb-8 text-blue-800">Anxiety Disorders</h1>
       
-      {/* Image Carousel */}
+     
       <div className="mb-10 bg-gray-50 p-4 rounded-lg">
         <div className="relative">
           <div className="overflow-hidden rounded-lg shadow-md">
@@ -63,7 +63,7 @@ const Anxiety = () => {
         </div>
       </div>
 
-      {/* Introduction */}
+    
       <div className="mb-8">
         <p className="text-gray-700 leading-relaxed">
           Anxiety disorders encompass a range of conditions characterized by excessive and persistent feelings of anxiety and fear. 
@@ -71,7 +71,7 @@ const Anxiety = () => {
         </p>
       </div>
 
-      {/* Types of Anxiety */}
+    
       <div className="mb-8">
         <h2 className="text-2xl font-semibold text-blue-700 mb-4">Common Types of Anxiety Disorders</h2>
         <div className="grid md:grid-cols-2 gap-4">
@@ -109,7 +109,7 @@ const Anxiety = () => {
         </div>
       </div>
 
-      {/* Phobias */}
+    
       <div className="mb-8">
         <h2 className="text-2xl font-semibold text-blue-700 mb-4">Phobias</h2>
         <p className="text-gray-700 mb-4">
@@ -140,7 +140,7 @@ const Anxiety = () => {
         </div>
       </div>
 
-      {/* Treatment */}
+     
       <div className="mb-8">
         <h2 className="text-2xl font-semibold text-blue-700 mb-4">Treatment Options</h2>
         <p className="text-gray-700 mb-4">
@@ -174,7 +174,7 @@ const Anxiety = () => {
         </div>
       </div>
 
-      {/* Call to Action */}
+ 
       <div className="bg-blue-100 p-6 rounded-lg border border-blue-300 text-center">
         <p className="text-blue-800 font-medium mb-2">
           If you or someone you know is struggling with anxiety or phobias, seeking professional help from a mental health provider is important.
